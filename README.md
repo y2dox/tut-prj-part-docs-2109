@@ -6,3 +6,9 @@ tutorial from simple docs to complex configurations
 
 - task
 - python
+
+## step 1. install mkdocs deps
+
+first step at `growlog/s1.deps.docs.tasks`
+
+with deps and mkdocs commands
