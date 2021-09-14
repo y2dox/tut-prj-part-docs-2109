@@ -51,10 +51,15 @@ tasks:
       - task: with-venv
         vars: {cmd: mkdocs serve}
 
-  mkdocs-build-pack:
+  mkdocs-dpack-build:
     desc: _
     cmds:
-      docker build . 
+      - docker build -t mkdocs_site_pack -f mkdocs_site.Dockerfile .
+
+  mkdocs-dpack-serve:
+    desc: _
+    cmds:
+      - docker run --rm -p 8480:8080 -t mkdocs_site_pack .
 
 
 dependencies:
