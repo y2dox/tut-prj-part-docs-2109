@@ -1,7 +1,8 @@
 # https://taskfile.dev
 
 version: '3'
-
+includes:
+    cenv: deps.setup.conda-env.exe.yml
 vars:
   GREETING: Hello, World!
 
@@ -9,9 +10,5 @@ tasks:
   default:
     cmds:
       - echo "{{.GREETING}}"
+      - task -l
     silent: true
-
-  next-stage:
-    desc: _
-    cmds:
-      - echo tbd

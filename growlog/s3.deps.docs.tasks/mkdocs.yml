@@ -1,0 +1,6 @@
+site_name: "My site"
+plugins:
+- search:
+- simple:
+theme:
+  name: material
