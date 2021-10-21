@@ -12,3 +12,5 @@ tutorial from simple docs to complex configurations
 first step at `growlog/s1.deps.docs.tasks`
 
 with deps and mkdocs commands
+
+## step 2. build docker image with site dir and http server
